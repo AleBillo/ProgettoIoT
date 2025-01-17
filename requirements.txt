@@ -1,0 +1,5 @@
+opencv-python-headless
+tcolorpy
+paho-mqtt
+numpy
+flask

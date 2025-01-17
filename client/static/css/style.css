@@ -1,0 +1,127 @@
+/* Tema scuro globale */
+body {
+	background-color: #121212; /* Sfondo scuro */
+	color: #ffffff; /* Testo bianco */
+	font-family: Arial, sans-serif; /* Font leggibile */
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	background-color: #1f1f1f; /* Sfondo leggermente più chiaro */
+	padding: 10px 0;
+}
+
+header p {
+	color: #ffffff; /* Testo bianco */
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+/* Main */
+main {
+	padding: 20px 0;
+}
+
+/* Titolo principale */
+h1 {
+	color: #ffffff; /* Colore accento (verde acqua) */
+}
+
+
+
+/* Testo accanto agli slider */
+label, p {
+	color: #ffffff; /* Testo bianco */
+}
+
+/* Footer */
+footer {
+	background-color: #1f1f1f; /* Sfondo scuro */
+	padding: 20px 0;
+	text-align: center;
+
+}
+
+footer p {
+	color: #aaaaaa; /* Testo grigio chiaro */
+	margin: 0;
+}
+
+/* Bottone range descrizione */
+.col p {
+	font-size: 0.9rem; /* Testo più piccolo */
+};
+
+/* Slider e testo */
+label.form-label {
+	font-size: 1.5rem; /* Testo più grande per le etichette */
+	color: #ffffff;
+}
+
+p {
+	font-size: 1.2rem; /* Testo accanto agli slider */
+	color: #cccccc;
+}
+
+/* Layout */
+.container {
+	max-width: 1200px;
+}
+
+.d-flex {
+	gap: 1rem; /* Spazio tra elementi nella stessa riga */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	background-color: #ffc107;  /* Giallo Warning */
+	border-radius: 50%;  /* Per mantenere la forma rotonda */
+	width: 20px;
+	height: 20px;
+}
+
+/* Effetto quando lo slider è attivo (durante l'interazione) */
+input[type="range"]:active::-webkit-slider-thumb {
+	background-color: #e0a800; /* Giallo più scuro per effetto attivo */
+}
+
+button:disabled {
+	background-color: #ccc !important; /* Colore grigio */
+	border-color: #aaa !important;    /* Bordo grigio */
+	cursor: not-allowed;             /* Indicatore non cliccabile */
+}
+
+
+/* Notifica */
+.notification {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #28a745; /* Verde successo */
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 14px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	opacity: 0; /* Nascosta inizialmente */
+	transform: translateY(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 1000;
+}
+
+/* Mostra la notifica */
+.notification.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Animazione bottone */
+button:active {
+	transform: scale(0.95); /* Effetto pressione */
+	transition: transform 0.1s;
+}
+
+
+
+
