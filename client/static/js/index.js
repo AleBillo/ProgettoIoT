@@ -62,20 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		updateState();
 	});
 
-	// Impedisce la digitazione manuale nei campi numerici
-	// const numberFields = document.querySelectorAll('input[type="number"]');
-	// numberFields.forEach((field) => {
-		// 	field.addEventListener("keydown", (event) => {
-			// 		const allowedKeys = [
-				// 			"ArrowUp",
-				// 			"ArrowDown",
-				// 			"Tab",
-				// 			"Backspace",
-				// 			"Delete",
-				// 		];
-			// 		if (!allowedKeys.includes(event.key)) event.preventDefault();
-			// 	});
-		// });
 
 	// Funzione per inviare i dati tramite i pulsanti INVIA
 	const handleSendMessage = async (mode) => {
